@@ -40,6 +40,7 @@ function rdpm() {
     redrawCanvas();
     pc === true?ctx.drawImage(pmclosed, pm.x, pm.y, 25, 25): ctx.drawImage(pmopen, pm.x, pm.y, 25, 25);
     if (move > 4) {
-        if (pc === true) {ctx.drawImage(pmopen, pm.x, pm.y, 25, 25); pc = false;} else {ctx.drawImage(pmclosed, pm.x, pm.y, 25, 25); pc = true;} move = 0;
+        if (pc === true) {ctx.drawImage(pmopen, pm.x, pm.y, 25, 25); pc = false;
+        } else {ctx.drawImage(pmclosed, pm.x, pm.y, 25, 25); pc = true;} move = 0;
     }
 }
